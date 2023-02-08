@@ -1,15 +1,7 @@
-
-// import Card from "./Card"; 
-// import data from './data.js'
-
-import UseStateHook from './UseStateHook'
-// import UseStateHookAdv from "./UseStateHookAdv";
+import Calculator from "./Calculator";
 
 function App() {
-
-  return (
-    <UseStateHook/>
-    );
+  return <Calculator />;
 }
 
 export default App;
