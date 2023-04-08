@@ -6,9 +6,10 @@
 // import Todo from "./Todo";
 // import UseEffectAdv from "./UseEffectAdv";
 // import UseEffectAdv2 from "./UseEffectAdv2";
-import UseEffectAdv3 from "./UseEffectAdv3";
+// import UseEffectAdv3 from "./UseEffectAdv3";
+import UseReducerFunc from "./reducer/useReducerFunc";
 function App() {
-  return <UseEffectAdv3 />;
+  return <UseReducerFunc />;
 }
 
 export default App;
