@@ -1,6 +1,5 @@
-import { logDOM } from "@testing-library/react";
-import React, { useEffect, useState, useTransition } from "react";
-
+import React, { useEffect, useState, useContext } from "react";
+import { UserContext } from "./context/userContext";
 const URL = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
 
 export default function UseEffectAdv3() {
@@ -9,7 +8,8 @@ export default function UseEffectAdv3() {
   const [url, setUrl] = useState(URL);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState({ status: false, msg: "" });
-
+  const data = useContext(UserContext);
+  console.log(data);
   const fetchApiData = async (apiUrl) => {
     try {
       setIsLoading(true);
