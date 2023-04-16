@@ -41,7 +41,6 @@ export default function UseEffectAdv2() {
       </div>
     );
   }
-  console.log(usersData);
   return (
     <div>
       <ul>

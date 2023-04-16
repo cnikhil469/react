@@ -7,9 +7,10 @@
 // import UseEffectAdv from "./UseEffectAdv";
 // import UseEffectAdv2 from "./UseEffectAdv2";
 // import UseEffectAdv3 from "./UseEffectAdv3";
-import UseReducerFunc from "./reducer/useReducerFunc";
+// import UseReducerFunc from "./reducer/useReducerFunc";
+import UseReducerAdv from './reducer/useReducerAdv'
 function App() {
-  return <UseReducerFunc />;
+  return <UseReducerAdv />;
 }
 
 export default App;
