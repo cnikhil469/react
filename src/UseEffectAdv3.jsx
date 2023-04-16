@@ -9,7 +9,6 @@ export default function UseEffectAdv3() {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState({ status: false, msg: "" });
   const data = useContext(UserContext);
-  console.log(data);
   const fetchApiData = async (apiUrl) => {
     try {
       setIsLoading(true);
@@ -43,7 +42,6 @@ export default function UseEffectAdv3() {
   } else if (isError?.status) {
     return <h3>{isError?.msg}</h3>;
   }
-  console.log(mockData);
   return (
     <div>
       <input
@@ -59,6 +57,7 @@ export default function UseEffectAdv3() {
         Submit
       </button>
       <h2>MockTail Count: {mockData?.length}</h2>
+      <h4>The context data is: {data}</h4>
       <hr />
       <div>
         <h2>Results of the search:</h2>

@@ -2,7 +2,6 @@ import React from "react";
 import { useReducer } from "react";
 
 const reducer = (state, action) => {
-  console.log(state, action);
   if (action.type === "DELETE_ITEM") {
     const newList = state.data.filter((item) => {
       return item.id !== action.payload;
@@ -22,9 +21,7 @@ export default function UseReducerFunc() {
   };
 
   const [state, dispatch] = useReducer(reducer, initialState);
-  console.log(useReducer(reducer, initialState));
   const handleDelete = (id) => {
-    console.log(id);
     dispatch({
       type: "DELETE_ITEM",
       payload: id,
@@ -35,6 +32,7 @@ export default function UseReducerFunc() {
     <ul>
       <li>
         <h2>Use Reducer Function</h2>
+        <h3>Count of the names: {state.data.length}</h3>
       </li>
       {state.data.map((item) => {
         const { id, firstName, lastName } = item;
