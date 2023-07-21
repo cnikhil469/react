@@ -61,3 +61,24 @@
     }
   }
 }
+
+.nav-bar,
+nav {
+  padding: 20px;
+  background-color: cornflowerblue;
+  text-align: center;
+  a {
+    margin-right: 20px;
+    font-size: 2rem;
+    text-decoration: none;
+    &.active {
+      text-decoration: underline;
+      color: bisque;
+    }
+  }
+}
+
+.users-card {
+  background-color: aqua;
+  margin: 10px;
+}
