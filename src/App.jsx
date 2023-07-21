@@ -8,25 +8,7 @@
 // import UseEffectAdv2 from "./UseEffectAdv2";
 // import UseEffectAdv3 from "./UseEffectAdv3";
 // import UseReducerFunc from "./reducer/useReducerFunc";
-// import UseReducerAdv from './reducer/useReducerAdv'
-// import UseRefHook from "./UseRefHook";
-// import UseMemo from "./UseMemo";
-// import UseCallbackFunc from "./useCallBack&ReactMemo";
-// import CounterFunc from "./counterFunc";
-// import UseFetchImpl from "./useFetchImpl";
-import Home from "./Home";
-// import About from "./About";
-import Contact from "./Contact";
-import NotFound from "./NotFound";
-import Navbar from "./Navbar";
-import Projects from "./Projects";
-import { Routes, Route } from "react-router-dom";
-import "./forms.scss";
-import ProjectsA from "./ProjectsA";
-import ProjectsB from "./ProjectsB";
-import Users from "./Users";
-import UsersData from "./UsersData";
-import React from "react";
+import UseReducerAdv from "./reducer/useReducerAdv";
 function App() {
   const LazyAbout = React.lazy(() => import("./About"));
   return (
